@@ -6,11 +6,31 @@ body{
 div{
     padding: 2% 2%;
 }
-
-h1,h3{
-    padding: 2% 2%;
+h1{
+    font-size: 60px;
+    padding: 4% 4%;
+}
+h3{
+    font-size: 40px;
+    padding: 4% 4%;
+}
+span{
+    font-size: 30px;
 }
 
 #nbr{
     width: 70px;
+    border: black 2px solid;
 }
+#bt, #reset{
+    border: black 2px solid;
+}
+
+section{
+
+    padding: 5%;
+    border: black 2px solid;
+}
+
+
+

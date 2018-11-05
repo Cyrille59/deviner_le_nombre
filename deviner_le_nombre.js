@@ -15,12 +15,15 @@ document.getElementById("bt").addEventListener("click", function () {
     nbr.innerHTML=nb;
 
 
+    if (nb <=0 || nb > 100) {
+        alert("Champ requis ou erroné");
+        return;
 
-    if (nbaleatoire==nb) {
+    }if (nbaleatoire==nb) {
         document.getElementById("result").innerHTML = "Trouvé";
-        alert("Bravo");
+        alert("Bravo! vous avez trouvé.");
         document.getElementById("bt").style.visibility="hidden";
-        essai--;
+
         document.getElementById("compteur").innerHTML="Compteur : "+ essai;
 
 
@@ -35,17 +38,16 @@ document.getElementById("bt").addEventListener("click", function () {
         document.getElementById("compteur").innerHTML = "Compteur : " + essai;
 
     }if (essai==0) {
-         document.getElementById("bt").style.visibility="hidden";
-         alert("Vous avez perdu !");
+        document.getElementById("bt").style.visibility = "hidden";
+        alert("Vous avez perdu !");
 
-
-     }
+    }
 
 
 });
 
 document.getElementById("reset").addEventListener("click", function (){
-
+    document.getElementById("nbr").value="";
     location.reload(), false;
 
 });
