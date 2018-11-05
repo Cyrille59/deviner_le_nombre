@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    background: linear-gradient(#007bff, white, #007bff);
+}
+
+div{
+    padding: 2% 2%;
+}
+
+h1,h3{
+    padding: 2% 2%;
+}
+
+#nbr{
+    width: 70px;
+}
